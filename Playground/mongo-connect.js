@@ -8,9 +8,9 @@ MongoClient.connect("mongodb://localhost:27017/", {useUnifiedTopology: true}, (e
         console.log('Successfully connected to the DB'); 
         var db = client.db('TodoApp');
         const myobj = {
-            name : 'Rahul', 
+            name : 'Rishu', 
             age : 21,
-            location : 'Redma'
+            location : 'Dhanbad'
         };
         db.collection('Users').insertOne(myobj,(err,result) => {
         if(err)
