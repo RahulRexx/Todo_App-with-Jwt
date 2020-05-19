@@ -1,4 +1,4 @@
-var env = process.env.NODE_ENV || 'development';
+var env = process.env.NODE_ENV || 'development'; // precess.env.NODE_ENV is very imprtant 
 
 if (env === 'development') {
     var config = require('./config.json');
