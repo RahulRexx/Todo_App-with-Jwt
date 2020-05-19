@@ -222,8 +222,8 @@ app.delete('/users/me/token',authenticate,(req,res) => {
         });
 });
 
-app.listen(3000,() => {
-    console.log('Server Started');
+app.listen(process.env.PORT,() => {
+    console.log(`Server Started at port ${process.env.PORT}`);
 });
 
 
